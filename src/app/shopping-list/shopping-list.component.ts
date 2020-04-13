@@ -18,4 +18,8 @@ new Ingredient('milk',1)
   ngOnInit(): void {
   }
 
+  onIngredientAdded(ingredient: Ingredient){
+this.ingredients.push(ingredient);
+  }
+
 }
