@@ -22,4 +22,11 @@ addIngredient(ingredient:Ingredient)
     this.ingredients.push(ingredient);
     this.ingredientsChanged.emit(this.ingredients.slice());
 }
+
+addIngredients(ingredients: Ingredient[]){
+
+    this.ingredients.push(...ingredients);
+    this.ingredientsChanged.emit(this.ingredients.slice());
+}
+
 }
