@@ -1,5 +1,5 @@
 import { ShoppingListService } from './shopping-list/shopping-list.service';
-
+import {FormsModule} from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -28,6 +28,8 @@ import { DropdownDirective } from './shared/dropdown.directive';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+   
     AppRoutingModule
   ],
   providers: [ShoppingListService],
