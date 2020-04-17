@@ -26,7 +26,12 @@ recipesChanged = new Subject<Recipe[]>();
       }
       getRecipe(id: number){
         return this.recipes[id];
-    }
+      }
+
+      setRecipes(recipes:Recipe[]){
+        this.recipes = recipes;
+        this.recipesChanged.next(this.recipes.slice());
+      }
 
       addIngredientsToShoppingList(ingredients:Ingredient[]){
         this.slService.addIngredients(ingredients);
