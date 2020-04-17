@@ -9,7 +9,7 @@ export class RecipeService{
 
 recipesChanged = new Subject<Recipe[]>();
 
-   private recipes: Recipe[] = [
+  /* private recipes: Recipe[] = [
         new Recipe('Test','test description','https://c0.wallpaperflare.com/preview/40/957/185/canada-calgary-food-healthy-eating.jpg',
         [new Ingredient('meat',2),new Ingredient('bread',1)]),
         new Recipe('Test2','test description2','https://c0.wallpaperflare.com/preview/40/957/185/canada-calgary-food-healthy-eating.jpg',
@@ -17,8 +17,8 @@ recipesChanged = new Subject<Recipe[]>();
         new Recipe('Test3','test description3','https://c0.wallpaperflare.com/preview/40/957/185/canada-calgary-food-healthy-eating.jpg',
         [new Ingredient('salt',1),new Ingredient('tomato',1),new Ingredient('salad',2)])
       
-      ]
-
+      ] */
+      private recipes: Recipe[] = [];
       constructor(private slService:ShoppingListService){}
 
       getRecipes(){
